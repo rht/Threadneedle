@@ -4,9 +4,16 @@ import core.AccountingException
 import core.Agent
 import core.Bank
 import core.BaselWeighting
-import core.LedgerType
 import core.Loan
 import core.Transaction
+
+
+class LedgerType:
+    LOAN = 1
+    CAPITAL = 2
+    DEPOSIT = 3
+    CASH = 4
+
 
 class Ledger:
     def __init__(self, string: str, string2: str, accountType: AccountType, ledgerType: LedgerType) -> None:
