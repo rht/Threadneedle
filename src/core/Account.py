@@ -15,6 +15,19 @@ import java.util.function.Consumer
 import javafx.collections.FXCollections
 import javafx.collections.ObservableMap
 
+
+class AccountType:
+    ASSET = -1
+    LIABILITY = 1
+    EQUITY = 1
+
+    def __init__(self, n2: int) -> None:
+        self.polarity: int = n2
+
+    def polarity(self) -> int:
+        return self.polarity
+
+
 class Account:
     # long incoming  # TODO seems to be unused
     # long outgoing
